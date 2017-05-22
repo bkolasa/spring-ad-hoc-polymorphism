@@ -1,4 +1,4 @@
-package pl.ontodata.springadhoc.typeservice;
+package pl.ontodata.springadhoc.adhoc;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * Created by bkolasa on 16.05.17.
  */
 @Component
-public class StringPlusable implements Plusable<String> {
+public class StringPlusableOps implements Plusable<String> {
     public String plus(String t1, String t2) {
         return t1 + t2;
     }

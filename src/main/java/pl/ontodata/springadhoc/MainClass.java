@@ -6,8 +6,8 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
-import pl.ontodata.springadhoc.typeservice.SumUtil;
-import pl.ontodata.springadhoc.typeservice.model.Point;
+import pl.ontodata.springadhoc.adhoc.SumUtil;
+import pl.ontodata.springadhoc.adhoc.model.Point;
 
 @SpringBootApplication
 public class MainClass {
