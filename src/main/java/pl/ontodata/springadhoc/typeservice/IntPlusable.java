@@ -1,4 +1,4 @@
-package pl.ontodata.springadhoc;
+package pl.ontodata.springadhoc.typeservice;
 
 import org.springframework.stereotype.Component;
 

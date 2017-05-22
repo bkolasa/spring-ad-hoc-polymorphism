@@ -1,4 +1,4 @@
-package pl.ontodata.springadhoc;
+package pl.ontodata.springadhoc.typeservice;
 
 /**
  * Created by bkolasa on 16.05.17.

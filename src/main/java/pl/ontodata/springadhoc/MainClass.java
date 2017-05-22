@@ -1,12 +1,13 @@
 package pl.ontodata.springadhoc;
 
+import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
-
-import java.util.Arrays;
+import pl.ontodata.springadhoc.typeservice.SumUtil;
+import pl.ontodata.springadhoc.typeservice.model.Point;
 
 @SpringBootApplication
 public class MainClass {
@@ -26,8 +27,8 @@ public class MainClass {
     }
 
     private void start() {
-        System.out.println(intUtil.sum(Arrays.asList(1,2,3,4), (Class<Integer>) Integer.valueOf(1).getClass()));
-        System.out.println(intUtil.sum(Arrays.asList("a","b","c"), String.class));
-//        System.out.println(intUtil.sum(Arrays.asList(1d), Double.class));
+        System.out.println(intUtil.sum(Arrays.asList(1, 2, 3, 4), (Class<Integer>) Integer.valueOf(1).getClass()));
+        System.out.println(intUtil.sum(Arrays.asList("a", "b", "c"), String.class));
+        System.out.println(intUtil.sum(Arrays.asList(new Point(1, 2), new Point(3, 4)), Point.class));
     }
 }

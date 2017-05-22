@@ -1,4 +1,4 @@
-package pl.ontodata.springadhoc;
+package pl.ontodata.springadhoc.typeservice;
 
 import com.google.common.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;

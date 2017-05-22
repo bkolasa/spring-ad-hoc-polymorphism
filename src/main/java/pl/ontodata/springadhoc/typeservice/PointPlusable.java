@@ -1,6 +1,7 @@
-package pl.ontodata.springadhoc;
+package pl.ontodata.springadhoc.typeservice;
 
 import org.springframework.stereotype.Component;
+import pl.ontodata.springadhoc.typeservice.model.Point;
 
 /**
  * Created by bkolasa on 16.05.17.
