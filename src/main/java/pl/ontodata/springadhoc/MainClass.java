@@ -1,6 +1,8 @@
 package pl.ontodata.springadhoc;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,5 +32,6 @@ public class MainClass {
         System.out.println(intUtil.sum(Arrays.asList(1, 2, 3, 4), (Class<Integer>) Integer.valueOf(1).getClass()));
         System.out.println(intUtil.sum(Arrays.asList("a", "b", "c"), String.class));
         System.out.println(intUtil.sum(Arrays.asList(new Point(1, 2), new Point(3, 4)), Point.class));
+        System.out.println(intUtil.sum(Arrays.asList(Collections.emptyList(), Arrays.asList(1, 2, 3), Arrays.asList(3,4,5)), List.class));
     }
 }

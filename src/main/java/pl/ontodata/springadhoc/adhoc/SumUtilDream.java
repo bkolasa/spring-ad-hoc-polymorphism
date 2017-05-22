@@ -4,10 +4,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by bkolasa on 16.05.17.
- */
-@Component
+//@Component
 public class SumUtilDream<T> {
 
     @Autowired
